@@ -204,7 +204,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			// the name of the categories and the block's number variables:
 			// leftCategory, rightCategory, leftAttribute and rightAttribute, blockNum, nBlocks.
 			// Notice that this is HTML text.
-			instAttributePractice: '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="TEST TEXT"><p align="center" style="font-size:20px; font-family:arial">' +
+			instAttributePractice: '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="PLEASE PRESS SENSOR BUTTON NOW" width="200" height="300"><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Put a left finger on the <b>E</b> key for items that belong to the category <font color="#0000ff">leftAttribute.</font>' +
@@ -230,7 +230,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'</div>'
 			].join('\n'),
 
-			instCategoriesPractice: '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="TEST TEXT"><p align="center" style="font-size:20px; font-family:arial">' +
+			instCategoriesPractice: '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="PLEASE PRESS SENSOR BUTTON NOW" width="200" height="300"><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Put a left finger on the <b>E</b> key for items that belong to the category <font color="#336600">leftCategory</font>. ' +
@@ -257,7 +257,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'</div>'
 			].join('\n'),
 
-			instFirstCombined : '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="TEST TEXT"><p align="center" style="font-size:20px; font-family:arial">' +
+			instFirstCombined : '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="PLEASE PRESS SENSOR BUTTON NOW" width="200" height="300"><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Use the <b>E</b> key for <font color="#336600">leftCategory</font> and for <font color="#0000ff">leftAttribute</font>.<br/>' +
@@ -283,7 +283,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'</div>'
 			].join('\n'),
 
-			instSecondCombined : '<div><img src="Empatica.jpg" alt="TEST TEXT"><p align="center" style="font-size:20px; font-family:arial">' +
+			instSecondCombined : '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="PLEASE PRESS SENSOR BUTTON NOW" width="200" height="300"><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'This is the same as the previous part.<br/>' +
@@ -308,7 +308,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'</div>'
 			].join('\n'),
 
-			instSwitchCategories : '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="TEST TEXT"><p align="center" style="font-size:20px; font-family:arial">' +
+			instSwitchCategories : '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="PLEASE PRESS SENSOR BUTTON NOW" width="200" height="300"><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'<b>Watch out, the labels have changed position!</b><br/>' +
