@@ -1,4 +1,4 @@
-define(['pipAPI','https://cdn.jsdelivr.net/gh/matthewcgraham/IATStudy/IAT.js'], function(APIConstructor, iatExtension){
+define(['pipAPI','https://cdn.jsdelivr.net/gh/matthewcgraham/IATStudy/IAT_T2.js'], function(APIConstructor, iatExtension){
 	var API = new APIConstructor();
 
 return iatExtension({
