@@ -166,7 +166,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instWidth : 99, //The width of the instructions stimulus
             
 			finalText : '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="PLEASE PRESS SENSOR BUTTON NOW" width="200" height="300">',
-			finalTouchText : 'Touch the bottom green area to continue to the next task',
+			finalTouchText : '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="PLEASE PRESS SENSOR BUTTON NOW" width="200" height="300"><p align="center" style="font-size:20px; font-family:arial">' +
+				'<p align="center">Press the <b>space bar</b> to continue to the next task.</font></p></div>',
 
 			touchMaxStimulusWidth : '50%', 
 			touchMaxStimulusHeight : '50%', 
@@ -1306,7 +1307,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
                 stimuli : [
                     {
                         inherit : 'Default',
-                        media : {word : (isTouch ? piCurrent.preDebriefingTouchText : piCurrent.preDebriefingText)}
+                        media : {html : (isTouch ? piCurrent.preDebriefingTouchText : piCurrent.preDebriefingText)}
                     }
                 ]
             });
@@ -1352,7 +1353,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			stimuli : [
 				{
 					inherit : 'Default',
-					media : {word : (isTouch ? piCurrent.finalTouchText : piCurrent.finalText)}
+					media : {html : (isTouch ? piCurrent.finalTouchText : piCurrent.finalText)}
 				}
 			]
         });
