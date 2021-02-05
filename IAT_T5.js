@@ -341,7 +341,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 			showDebriefing:true, //Show feedback in the last trial? Relevant only in a Qualtrics IAT because in Qualtrics we cannot access the saved feedback and IAT score later in the survey.
 			//Texts for the trials that show the debriefing.
-			preDebriefingText : 'Press space to see your result', //Text in the trial that comes before showing the debriefing.
+			preDebriefingText : '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="PLEASE PRESS SENSOR BUTTON NOW" width="200" height="300"><p align="center" style="font-size:20px; font-family:arial">' +
+							'<p align="center">Press space to see your result</font></p></div>', //Text in the trial that comes before showing the debriefing.
 			preDebriefingTouchText : 'Touch the bottom green area to see your result', //Touch version for the text in the trial that comes before showing the debriefing.
 			debriefingTextTop : 'Your result:', //Will be shown above the feedback text.
 			//ATTENTION: We do not recommend showing participants their results. The IAT is a typical psychological measure so it is not very accurate. 
@@ -1018,52 +1019,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			remindErrorTextTouch : globalObj.remindErrorTextTouch
 		};
 		//////////////////////////////
-		////Block 1: Categories block
-		var iBlock = 1;
-		var blockParamsCats = {
-			nBlocks : nBlocks,
-			remindError : globalObj.remindError,
-			remindErrorText : globalObj.remindErrorText,
-			remindErrorTextTouch : globalObj.remindErrorTextTouch
-		};
-		//Set sides
-		var rightCatName = (globalObj.randomBlockOrder ? (Math.random() >= 0.5 ? cat1.name : cat2.name) : cat2.name);
-		var leftCatTrial = 'cat1left';
-		blockParamsCats.left1 = cat1;
-		var rightCatTrial = 'cat2right';
-		blockParamsCats.right1 = cat2;
-		if (rightCatName == cat1.name)
-		{
-			blockParamsCats.right1 = cat1;
-			rightCatTrial = 'cat1right';
-			blockParamsCats.left1 = cat2;
-			leftCatTrial = 'cat2left';
-		}
-		var blockCondition = blockParamsCats.left1.name + ',' + blockParamsCats.right1.name;
-		blockParamsCats.nMiniBlocks = globalObj.blockCategories_nMiniBlocks;
-		blockParamsCats.nTrials = globalObj.blockCategories_nTrials;
-		blockParamsCats.blockNum = iBlock;
-		blockParamsCats.nCats = 2;
-		blockParamsCats.instTemplate = isTouch ? globalObj.instCategoriesPracticeTouch : globalObj.instCategoriesPractice;
 
-		var blockLayout = getLayout(blockParamsCats);
-		var nTrialsInMini = blockParamsCats.nTrials/blockParamsCats.nMiniBlocks;
-		var iBlock2Mini;
-		
-		//Add trials, but only if there are trials in this block
-		if (blockParamsCats.nTrials > 0)
-		{
-    		trialSequence.push(getInstTrial(blockParamsCats));
-    		for (iBlock2Mini = 1; iBlock2Mini <= blockParamsCats.nMiniBlocks; iBlock2Mini++)
-    		{
-    			trialSequence.push(getMiniMixer2({
-    			nTrialsInMini : nTrialsInMini, currentCond : blockCondition,
-    			rightTrial : rightCatTrial, leftTrial : leftCatTrial, blockNum : iBlock,
-    			blockLayout : blockLayout}));
-    		}
-    		iBlock++;
-		}
-		
 		//////////////////////////////
 		////Block 1: Categories block
 		var iBlock = 1;
