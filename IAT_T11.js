@@ -314,30 +314,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instThirdCombinedTouch : 'instFirstCombined', //this means that we're going to use the instFirstCombined property for the third combined block as well. You can change that.
 			instFourthCombinedTouch : 'instSecondCombined', //this means that we're going to use the instSecondCombined property for the fourth combined block as well. You can change that.
 
-			DeBrief: '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="PLEASE PRESS SENSOR BUTTON NOW" width="200" height="300"><p align="center" style="font-size:20px; font-family:arial">' +
-				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'<p align="center">Press the <b>space bar</b> to see your results.</font></p></div>',
-			instCategoriesPracticeTouch: [
-				'<div>',
-					'<p align="center">',
-						'<u>Part blockNum of nBlocks</u>',
-					'</p>',
-					'<p align="left" style="margin-left:5px">',
-						'<br/>',
-						'Put a left finger over the <b>left</b> green area for items that belong to the category <font color="#336600">leftCategory</font>.<br/>',
-						'Put a right finger over the <b>right</b> green area for items that belong to the category <font color="#336600">rightCategory</font>.<br/>',
-						'Items will appear one at a time.<br/>',
-						'<br/>',
-						'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. Touch the other side. <u>Go as fast as you can</u> while being accurate.',
-					'</p>',
-					'<p align="center">Touch the <b>lower </b> green area to start.</p>',
-				'</div>'
-			].join('\n'),
-
 			
 			showDebriefing:true, //Show feedback in the last trial? Relevant only in a Qualtrics IAT because in Qualtrics we cannot access the saved feedback and IAT score later in the survey.
 			//Texts for the trials that show the debriefing.
-			preDebriefingText : 'DeBrief',
+			preDebriefingText : '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="PLEASE PRESS SENSOR BUTTON NOW" width="200" height="300"><p align="center" style="font-size:20px; font-family:arial">' +
+						'<p align="center">Press the <b>space bar</b> to see your results.</font></p></div>',
 			//preDebriefingTouchText : 'Touch the bottom green area to see your result', //Touch version for the text in the trial that comes before showing the debriefing.
 			debriefingTextTop : 'Your result:', //Will be shown above the feedback text.
 			//ATTENTION: We do not recommend showing participants their results. The IAT is a typical psychological measure so it is not very accurate. 
