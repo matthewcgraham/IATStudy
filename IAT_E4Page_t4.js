@@ -1061,7 +1061,19 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
     		}
     		iBlock++;
 		}
-		
+		        //TODO: This should add a new page for additional instructions
+        trialSequence.push({
+            inherit : 'instructions',
+            data: {blockStart:true},
+            layout : [{media:{word:''}}],
+            stimuli : [
+                {
+                    inherit : 'Default',
+                    media : {html : (isTouch ? globalObj.EDASlideTouch : globalObj.EDASlide)}
+                }
+            ]
+        });
+
 		//////////////////////////////
 		////Block 1: Categories block
 		var iBlock = 1;
