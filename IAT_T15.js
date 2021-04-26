@@ -165,7 +165,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			
 			instWidth : 99, //The width of the instructions stimulus
             
-			finalText : '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="PLEASE PRESS SENSOR BUTTON NOW" width="200" height="300">',
+			finalText : '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="PLEASE PRESS SENSOR BUTTON NOW" width="200" height="300"><p align="center" style="font-size:20px; font-family:arial">' +
+				'<font color="#000000"> <p align="center">Press the <b>space bar</b> when you are finished.</font></p></div>',
 			finalTouchText : '<div><img src="https://raw.githubusercontent.com/matthewcgraham/IATStudy/master/Empatica.jpg" alt="PLEASE PRESS SENSOR BUTTON NOW" width="200" height="300"><p align="center" style="font-size:20px; font-family:arial">' +
 				'<p align="center">Press the <b>space bar</b> to continue to the next task.</font></p></div>',
 
