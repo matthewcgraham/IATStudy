@@ -1,4 +1,4 @@
-define(['pipAPI','https://cdn.jsdelivr.net/gh/matthewcgraham/IATStudy/IAT_T13.js'], function(APIConstructor, iatExtension){
+define(['pipAPI','https://cdn.jsdelivr.net/gh/matthewcgraham/IATStudy/IAT_T14.js'], function(APIConstructor, iatExtension){
 	var API = new APIConstructor();
 
 return iatExtension({
@@ -87,9 +87,9 @@ return iatExtension({
 			//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
 			//categoryA is the name of the category that is found to be associated with attribute1,
 			//and categoryB is the name of the category that is found to be associated with attribute2.
-			fb_strong_Att1WithCatA_Att2WithCatB : 'Your data suggest a strong automatic association for attribute1 with categoryA and attribute2 with categoryB.',
-			fb_moderate_Att1WithCatA_Att2WithCatB : 'Your data suggest a moderate automatic association for attribute1 with categoryA and attribute2 with categoryB.',
-			fb_slight_Att1WithCatA_Att2WithCatB : 'Your data suggest a slight automatic association for attribute1 with categoryA and attribute2 with categoryB.',
-			fb_equal_CatAvsCatB : 'Your data suggest little or no automatic association between attribute2 and attribute1 with categoryA and categoryB..',
+			fb_strong_Att1WithCatA_Att2WithCatB : 'Your data suggest a strong association for attribute1 with categoryA and attribute2 with categoryB.',
+			fb_moderate_Att1WithCatA_Att2WithCatB : 'Your data suggest a moderate association for attribute1 with categoryA and attribute2 with categoryB.',
+			fb_slight_Att1WithCatA_Att2WithCatB : 'Your data suggest a slight association for attribute1 with categoryA and attribute2 with categoryB.',
+			fb_equal_CatAvsCatB : 'Your data suggest little or no association between attribute2 and attribute1 with categoryA and categoryB..',
     });
 });
