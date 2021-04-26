@@ -324,16 +324,16 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			//ATTENTION: We do not recommend showing participants their results. The IAT is a typical psychological measure so it is not very accurate. 
 			//In Project Implicit's website, you can see that we added much text to explain that there is still much unknown about the meaning of these results.
 			//We strongly recommend that you provide all these details in the debriefing of the experiment.
-			debriefingTextBottom : '<br><p align="center">Press the <b>space bar</b> to see your results.</font></p>', //Will be shown below the feedback text. 
+			debriefingTextBottom : 'Press the space bar to continue.', //Will be shown below the feedback text. 
             debriefingTextBottomTouch : 'Touch the green area to continue.',
 			//The default feedback messages for each cutoff -
 			//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
 			//categoryA is the name of the category that is found to be associated with attribute1,
 			//and categoryB is the name of the category that is found to be associated with attribute2.
-			fb_strong_Att1WithCatA_Att2WithCatB : 'Your responses suggested a strong automatic preference for categoryB over categoryA.',
-			fb_moderate_Att1WithCatA_Att2WithCatB : 'Your responses suggested a moderate automatic preference for categoryB over categoryA.',
-			fb_slight_Att1WithCatA_Att2WithCatB : 'Your responses suggested a slight automatic preference for categoryB over categoryA.',
-			fb_equal_CatAvsCatB : 'Your responses suggested no automatic preference between categoryA and categoryB.',
+			fb_strong_Att1WithCatA_Att2WithCatB : 'Your responses suggested a strong preference for categoryB over categoryA.',
+			fb_moderate_Att1WithCatA_Att2WithCatB : 'Your responses suggested a moderate preference for categoryB over categoryA.',
+			fb_slight_Att1WithCatA_Att2WithCatB : 'Your responses suggested a slight preference for categoryB over categoryA.',
+			fb_equal_CatAvsCatB : 'Your responses suggested no preference between categoryA and categoryB.',
 
 			//Error messages in the feedback
 			manyErrors: 'There were too many errors made to determine a result.',
